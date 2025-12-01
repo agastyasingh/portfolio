@@ -1,0 +1,120 @@
+/* .perspective {
+  perspective: 1000px;
+}
+.carousel3d {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+}
+.face {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+} */
+
+
+.perspective {
+    perspective: 1000px;
+}
+
+.carousel3d {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    /* touch-action: none;
+    cursor: grab; */
+}
+
+/* .carousel3d:active {
+  
+} */
+
+.face {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 1rem;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.95);
+    backface-visibility: hidden;
+    opacity: 0.7;
+    filter: brightness(0.6);
+    background-color: #4B4376;
+    touch-action: none;
+    cursor: grab;
+}
+
+.face:hover {
+    cursor: pointer;
+}
+
+.subtitle {
+    margin-top: -1rem;
+}
+
+.carousel3d .face.front {
+    opacity: 1;
+    background-color: white;
+    filter: brightness(1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.95);
+    z-index: 10;
+    cursor: grabbing;
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+
+/* Shine effect using ::before */
+.face::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) 100%);
+    transform: skewX(-25deg);
+    transition: none;
+}
+
+/* Trigger animation on hover */
+.face:hover::before {
+    animation: shine 1s ease-in-out;
+}
+
+/* Keyframes for the shine animation */
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+
+    100% {
+        left: 125%;
+    }
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.div1 {
+    grid-row: span 5 / span 5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.div2 {
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+}

@@ -1,0 +1,93 @@
+<nav class="shadow-lg sticky top-0 z-50 bg-[#041525]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center ml-15 cursor-pointer nav-items">
+        <span><img src="/assets/A logo.png"
+            class="mt-1 h-10 w-10 size-18 rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></span><span
+          class="text-2xl font-bold text-white drop-shadow-md ml-1">Agastya Singh</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="hidden sm:ml-6 sm:flex sm:space-x-8 items-center mr-28 nav-items gap-9">
+        <a href="#about"
+          class="text-white hover:text-gray-300 transition duration-200 drop-shadow-sm
+          hover:text-blue-400 hover:underline hover:underline-offset-4 hover:drop-shadow transition duration-200">About</a>
+        <a href="#work"
+          class="text-white hover:text-gray-300 transition duration-200 drop-shadow-sm
+          hover:text-blue-400 hover:underline hover:underline-offset-4 hover:drop-shadow transition duration-200">Work</a>
+        <a href="#tools"
+          class="text-white hover:text-gray-300 transition duration-200 drop-shadow-sm
+          hover:text-blue-400 hover:underline hover:underline-offset-4 hover:drop-shadow transition duration-200">Tools</a>
+
+        <!-- <div class="relative group">
+          <div class="cursor-pointer text-white hover:text-gray-300 transition duration-200 drop-shadow-sm
+    hover:text-blue-400 hover:underline hover:underline-offset-4 hover:drop-shadow">
+            Contact
+          </div>
+
+          <div
+            class="absolute top-full left-0 mt-1 hidden group-hover:flex flex-col bg-gray-800 rounded-md shadow-lg z-10 min-w-[160px]">
+            <a href="#email"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">Email</a>
+            <a href="https://www.linkedin.com/in/agastya-singh-37623b229"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">LinkedIn</a>
+            <a href="https://www.instagram.com/s.agastya?igsh=MTc4YzRydG1lbWw1cg%3D%3D&utm_source=qr"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">Instagram</a>
+            <a href="https://x.com/agastya927?s=21"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">Twitter</a>
+          </div>
+        </div> -->
+        <!-- Shared hover-sensitive wrapper -->
+        <div class="relative group">
+
+          <!-- Trigger -->
+          <div
+            class="cursor-pointer text-white hover:text-blue-400 hover:underline hover:underline-offset-4 drop-shadow-sm transition duration-200">
+            Contact
+          </div>
+
+          <!-- Dropdown menu -->
+          <div
+            class="dropdown hidden absolute top-full left-0 mt-1 flex-col bg-gray-800 rounded-md shadow-lg z-10 min-w-[160px]" id="dropdown">
+            <a href="#email"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">Email</a>
+            <a href="https://www.linkedin.com/in/agastya-singh-37623b229"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">LinkedIn</a>
+            <a href="https://www.instagram.com/s.agastya?igsh=MTc4YzRydG1lbWw1cg%3D%3D&utm_source=qr"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">Instagram</a>
+            <a href="https://x.com/agastya927?s=21"
+              class="px-4 py-2 text-white hover:text-blue-400 hover:underline hover:underline-offset-4 transition duration-200">Twitter</a>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="relative sm:hidden">
+        <button data-collapse-toggle="mobile-menu" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+
+        <!-- Dropdown Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden w-full md:block md:w-auto">
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-500">About</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-500">Work</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-500">Tools</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-100 hover:text-blue-500">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,26 @@
+.nav-items{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+.group:hover .dropdown {
+  display: flex;
+  animation: fadeIn 0.2s ease-in forwards;
+}
+
+.group:not(:hover) .dropdown {
+  animation: fadeOut 2.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(0.5rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(0.5rem); }
+}
+
+#dropdown{
+    margin-top: -0.1rem;
+}

@@ -1,0 +1,47 @@
+<div class="parent">
+    <div class="div1">
+        <button #leftArrow
+            class="group p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition 
+            duration-300 shadow-md flex items-center justify-center ml-2"
+            (mouseenter)="animateArrowIn()" (mouseleave)="animateArrowOut()">
+            <svg class="w-6 h-6 text-black group-hover:text-gray-700 transition duration-300" fill="none"
+                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg><p class="text-sm">Scroll Left</p>
+        </button>
+
+    </div>
+    <div class="div2">
+        <section id="observer-carousel" class="min-h-screen flex flex-col items-center justify-center text-white">
+            <div class="perspective-1000">
+                <div class="carousel3d" #carousel>
+                    <div class="face bg-white flex items-center justify-center overflow-hidden 
+                border-black outline-6" (click)="toggleZoom($event)">
+                        <img src="/assets/Flow12.drawio.svg" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="face bg-white flex items-center justify-center overflow-hidden 
+                border-black outline-6" (click)="toggleZoom($event)">
+                        <img src="/assets/Flow2.drawio.svg" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="face bg-white flex items-center justify-center overflow-hidden 
+                border-black outline-6" (click)="toggleZoom($event)">
+                        <img src="/assets/Flow3.drawio.svg" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="face bg-white flex items-center justify-center overflow-hidden 
+                border-black outline-6" (click)="toggleZoom($event)">
+                        <img src="/assets/Flow12.drawio.svg" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="face bg-white flex items-center justify-center overflow-hidden 
+                border-black outline-6" (click)="toggleZoom($event)">
+                        <img src="/assets/Flow12.drawio.svg" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="face bg-white flex items-center justify-center overflow-hidden 
+                border-black outline-6" (click)="toggleZoom($event)">
+                        <img src="/assets/Flow12.drawio.svg" class="w-full h-full object-contain" />
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 subtitle">Click to Zoom In / Zoom Out</p>
+            </div>
+        </section>
+    </div>
+</div>

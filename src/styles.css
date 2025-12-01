@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+app-root {
+  position: relative;
+  z-index: 0; /* Ensure it's under the fixed button */
+}
+
+body{
+    /* background-color:rgb(5, 29, 53); */
+    background-color:rgb(4, 21, 37);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.13) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.096) 2px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.123) 1px, transparent 1px);
+    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    }
+

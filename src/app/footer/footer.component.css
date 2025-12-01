@@ -1,0 +1,16 @@
+footer {
+  background-color: #1f2937; /* Tailwind bg-gray-800 */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgba(156, 163, 175, 1); /* Tailwind text-gray-400 */
+}
+
+footer .text-sm {
+  font-size: 0.875rem;
+}
